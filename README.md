@@ -14,7 +14,7 @@ This repo is in no way connected to our current workings at YunoJuno, and exists
 
 The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`, which will compile the JS and start a local server. 
 
-`yarn watch-css` will compile and watch `App.scss`, although if you prefer you can ignore the SASS file and directly edit `App.css`. Be aware that running any of the CSS build tasks will overwrite `App.css` though, so you may wish to delete the SASS file if you don't intend to use it. 
+`yarn watch-css` will compile and watch `App.module.scss`, although if you prefer you can ignore the SASS file and directly edit `App.module.css`. Be aware that running any of the CSS build tasks will overwrite `App.module.css` though, so you may wish to delete the SASS file if you don't intend to use it. 
 
 If you require more info, please refer to the `react-create-app` docs @ https://github.com/facebook/create-react-app.
 
@@ -35,6 +35,7 @@ You are free to implement this however you like but at minimum you will need to 
 In service of these user stories, there are some additional requirements:
 
 * Your solution must have some test coverage
+* Your solution must asynchronously load the character list
 * Your solution should be styled appropriately (based on design provided)
 * The layout at mobile sizes is at your discretion
 * Your solution must be compatible with the latest versions of the following browsers:
