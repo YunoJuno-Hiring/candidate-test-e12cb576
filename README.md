@@ -14,8 +14,6 @@ This repo is in no way connected to our current workings at YunoJuno, and exists
 
 The app was prepared using `react-create-app`. You can run the app using `npm start` or `yarn start`, which will compile the JS and start a local server.
 
-`yarn watch-css` will compile and watch any SCSS files.
-
 If you require more info, please refer to the `react-create-app` docs @ https://github.com/facebook/create-react-app.
 
 `react-create-app` supports ES6 syntax.
