@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import logo from "../logo.svg";
-import styles from "./App.module.css";
+import styles from "./App.module.scss";
 
 // Character list is available in the public directory
 
