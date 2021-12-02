@@ -4,18 +4,22 @@
   "private": true,
   "dependencies": {
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "sass": "^1.40.1"
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "react-scripts": "4.0.3"
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "react-scripts": "4.0.3",
+    "sass": "^1.40.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "watch-css": "sass src/:src/ --no-source-map --watch"
+    "watch-css": "sass src/:src/ --no-source-map --watch",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -28,5 +32,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "shared-config"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,css,scss,json,md}": "prettier --write"
   }
 }
