@@ -18,6 +18,21 @@ to assess your technical understanding of front-end technologies, and how to use
 
 ## 👋 Introduction
 
+### Development environment
+
+If you choose to, we have added our development environment to the repo. You can run this with
+[direnv](https://direnv.net/), and [nix](https://nixos.org/).
+
+If you have both of these installed, you can run `direnv allow` in the root of the project to load
+the environment.
+
+This will give you access to the following tools:
+
+-   Node v20
+-   NPM v10
+
+### Application environment
+
 The app was prepared using `react-create-app`. You can run the app using `npm start` which will
 compile the JS and start a local server.
 
@@ -64,7 +79,7 @@ repository.
 NB: We will never use your submission in any way other than for this interview process. See more
 about what we do with the code below.
 
-### 👩‍💻 What is this test designed to showcase?
+## 👩‍💻 What is this test designed to showcase?
 
 -   your ability to work on an existing React project.
 -   your capacity to take existing code and build on top of it.
@@ -72,7 +87,7 @@ about what we do with the code below.
 -   how you work as part of a normal code review process.
 -   how your pull request explains the change to the team.
 
-### 📥 Submission procedure
+## 📥 Submission procedure
 
 1. Fork the repository<sup>☨</sup>.
 1. Clone it locally & setup the environment.
