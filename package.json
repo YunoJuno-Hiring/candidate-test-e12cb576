@@ -1,17 +1,21 @@
 {
     "name": "yunojuno-react-code-test",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "dependencies": {
-        "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
     "devDependencies": {
-        "eslint-config-prettier": "^8.3.0",
-        "husky": "^7.0.4",
-        "lint-staged": "^12.1.2",
-        "prettier": "^2.5.0",
-        "react-scripts": "5.0.0",
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@types/jest": "^29.5.8",
+        "@types/react": "^18.2.37",
+        "@types/react-dom": "^18.2.15",
+        "eslint-config-prettier": "^9.0.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.1.0",
+        "prettier": "^3.1.0",
+        "react-scripts": "^5.0.1",
         "sass": "^1.40.1"
     },
     "scripts": {
@@ -41,6 +45,6 @@
         ]
     },
     "lint-staged": {
-        "*.{js,css,scss,json,md}": "prettier --write"
+        "*.{ts, tsx,css,scss,json,md}": "prettier --write"
     }
 }

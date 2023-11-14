@@ -4,7 +4,7 @@ import styles from "./App.module.scss";
 
 // Character list is available in the public directory
 
-export default function App() {
+export function App() {
   return (
     <div className={styles.App}>
       <header className={styles["App-header"]}>
