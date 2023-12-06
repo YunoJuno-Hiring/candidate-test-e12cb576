@@ -17,6 +17,7 @@
         "prettier": "^3.1.0",
         "react-scripts": "^5.0.1",
         "sass": "^1.40.1",
+        "tsc-files": "^1.1.4",
         "typescript": "^5.2.2"
     },
     "overrides": {
@@ -50,7 +51,11 @@
             "eslint-config-prettier"
         ]
     },
+    "husky": {
+        "pre-commit": "lint-staged"
+    },
     "lint-staged": {
+        "**/*.{ts,tsx}": "tsc-files --noEmit src/react-app-env.d.ts",
         "*.{ts, tsx,css,scss,json,md}": "prettier --write"
     }
 }
